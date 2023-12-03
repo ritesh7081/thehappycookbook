@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+body {
+  background-image: url(https://pattisfood.com/wp-content/uploads/2020/06/MainBackground-1024x696.png);
+  background-size: contain;
+  background-repeat: repeat;
+  color: white;
+}
+
+.head h1 {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(20, 39, 122);
+  text-decoration: underline;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+.head1 h2 {
+  color: green;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h2 {
+  text-align: center;
+}
+
+.head2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.head2 ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: square;
+  list-style-position: inside;
+  align-self: auto;
+
+}
+
+.head2 ul li {
+  align-self: auto;
+}
+
+.head2 ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+  align-items: center;
+
+}
+
+.custom-counter {
+  counter-reset: section;
+}
+
+.custom-counter li::before {
+  counter-increment: step-counter;
+  content: counter(step-counter);
+}
+
+.head2 ol li {
+  align-self: auto;
+}
+
+
+body {
+  font-family: Helvetica;
+}
+
+div {
+  text-align: center;
+  width: 50%;
+  margin-inline: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  border-top: 2px dashed;
+  border-color: blue !important;
+  margin: 0;
+  padding: 30px;
+  counter-increment: section;
+  position: relative;
+  width: 120%;
+  color: rgb(0, 0, 0);
+
+}
+
+
+
+p:nth-child(even):before {
+  content: counter(section);
+  right: 100%;
+  margin-right: -25px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(34, 176, 195);
+  text-align: center;
+  color: white;
+  font-size: 110%;
+}
+
+p:nth-child(odd):before {
+  content: counter(section);
+  left: 100%;
+  margin-left: -25px;
+  position: absolute;
+  border-radius: 50%;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  text-align: center;
+  color: white;
+  font-size: 110%;
+}
+
+
+
+p:nth-child(even) {
+  border-left: 2px dashed;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-right: 30px;
+  padding-right: 0;
+  font-size: 25px;
+}
+
+p:nth-child(odd) {
+  border-right: 2px dashed;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin-left: 30px;
+  padding-left: 0;
+  font-size: 25px;
+}
+
+p:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  font-size: 25px;
+}
+
+p:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 25px;
+}
